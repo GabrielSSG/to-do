@@ -1,0 +1,118 @@
+.container {
+    width: 736px;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.icon {
+    margin-bottom: 1rem;
+}
+
+.emptyMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 64px 24px;
+    font-weight: 700;
+    border-top: 1px solid var(--gray-400);
+}
+
+.emptyMessage p {
+    font-weight: 400;
+}
+
+.task {
+    padding: 16px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    color: var(--gray-100);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.taskDone {
+    border: 1px solid var(--gray-500);
+    color: var(--gray-300);   
+}
+
+.taskDone span {
+    text-decoration: line-through;
+}
+
+.task span {
+    width: 100%;
+}
+
+.task input[type="checkbox"] {
+    /* Removendo estilos padrão do sistema operacional */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ 
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    border: 2px solid var(--blue);  
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.task input[type="checkbox"]:hover {
+    border-color: var(--blue-dark);
+    background-color: rgba(30, 111, 159, 0.2);
+}
+
+.task input[type="checkbox"]:after {
+    font-family: "Inter", sans-serif;
+    content: "✔";
+    font-size: 0.75rem;
+    color: var(--gray-100);
+    display: none;
+    margin-top: 2px;
+}
+
+.task input[type="checkbox"]:checked {
+    background-color: var(--purple-dark);
+    border: none;
+}
+
+.task input[type="checkbox"]:checked:hover {
+    background-color: var(--purple);
+}
+
+.task input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+.task button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.task button path {
+    fill: var(--gray-300);
+}
+
+.task button:hover {
+    background-color: var(--gray-400);
+    fill: var(--danger);
+}
+
+.task button:hover path {
+    fill: var(--danger);
+}

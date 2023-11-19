@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.headerBackground {
+    background-color: var(--gray-700);
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    z-index: -1;
+}
