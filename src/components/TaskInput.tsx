@@ -4,7 +4,7 @@ import style from './TaskInput.module.css';
 import plus from '../assets/plus.svg';
 
 type TaskInputProps = {
-    addTask: (task: Task) => void;
+    addTask: (description: string) => void;
 }
 
 export function TaskInput({ addTask }: TaskInputProps) {
@@ -18,10 +18,7 @@ export function TaskInput({ addTask }: TaskInputProps) {
             return null;
         }
 
-        const id = Math.random();
-        const task: Task = { id, done: false, description: value };
-
-        addTask(task);
+        addTask(value);
         setValue('');
     }
 

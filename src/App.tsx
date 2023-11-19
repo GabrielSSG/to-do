@@ -17,11 +17,22 @@ function App() {
     const [activeTab, setActiveTab] = useState(1);
     const [tasks, setTasks] = useState<Task[]>([]);
 
-    /* Alterna entre as abas de todas as tarefas e tarefas concuidas */
+    /* Alterna entre as abas de todas as tarefas e tarefas concuidas */ 
     const changeActiveTab = (tab: number) => setActiveTab(tab);
 
     /* Adiciona uma nova tarefa a lista */
-    const handleAddTask = (task: Task) => setTasks(state => [...state, task]);
+    const handleAddTask = (description: string) => {
+        const ids = tasks.length ? tasks.map(item => item.id) : [0];
+        const lastValidId = Math.max(...ids)
+
+        const task: Task = {
+            id: lastValidId + 1,
+            description,
+            done: false
+        }
+
+        setTasks(state => [...state, task])
+    }
 
       /* Remove uma tarefa da lista */
       const handleRemoveTask = (id: number) => 

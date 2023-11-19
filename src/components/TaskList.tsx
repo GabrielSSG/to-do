@@ -17,7 +17,7 @@ export function TaskList({ data, changeTaskState, removeTask }: TaskListProps) {
             {data.length ?
                 data.map((task) => {
                     return (
-                        <div key={task.description} className={classNames(style.task, task.done && style.taskDone)}>
+                        <div key={task.id} className={classNames(style.task, task.done && style.taskDone)}>
                             <input 
                                 type="checkbox" 
                                 checked={task.done} 
