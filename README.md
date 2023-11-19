@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# ToDo List em ReactJS + Typescript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é parte do Desafio 01 da trilha de ReactJS do Ignite, oferecido pela Rocketseat. O objetivo é desenvolver uma aplicação de controle de tarefas estilo to-do list para consolidar os conceitos fundamentais do ReactJS.
 
-Currently, two official plugins are available:
+## Funcionalidades
+* Adição de uma nova tarefa
+* Marcação e desmarcação de uma tarefa como concluída
+* Remoção de uma tarefa da listagem
+* Exibição do progresso de conclusão das tarefas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Como Iniciar
+### Requisitos
+Antes de começar, certifique-se de ter o Node.js instalado em sua máquina.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Clonando o repositório
+```bash
+git clone https://github.com/[seu-nome-de-usuario]/[seu-repositorio].git
+cd [seu-repositorio]
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Instalando Dependências
+```bash
+npm install
+```
+
+### Iniciando a Aplicação
+```bash
+npm run start
+```
+## Contribuições
+Sinta-se à vontade para contribuir com melhorias, correções de bugs ou adição de novas funcionalidades. Abra uma issue ou envie um pull request!
