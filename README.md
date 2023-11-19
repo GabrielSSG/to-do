@@ -14,8 +14,8 @@ Antes de começar, certifique-se de ter o Node.js instalado em sua máquina.
 
 ### Clonando o repositório
 ```bash
-git clone https://github.com/[seu-nome-de-usuario]/[seu-repositorio].git
-cd [seu-repositorio]
+git clone https://github.com/GabrielSSG/to-do.git
+cd [to-do]
 ```
 
 ### Instalando Dependências
